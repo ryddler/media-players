@@ -20,7 +20,7 @@ api:
 ota:
 
 dashboard_import:
-  package_import_url: github://esphome/media-players/raspiaudio-muse-proto.yaml@main
+  package_import_url: github://ryddler/media-players/raspiaudio-muse-proto.yaml@main
 
 wifi:
   ap:
@@ -33,7 +33,7 @@ improv_serial:
 media_player:
   - platform: i2s_audio
     id: media_out
-    name: ${friendly_name}
+    name: "${friendly_name} player"
     dac_type: external
     i2s_lrclk_pin: GPIO25
     i2s_dout_pin: GPIO26
@@ -54,7 +54,7 @@ binary_sensor:
 
 light:
   - platform: fastled_clockless
-    name: ${friendly_name}
+    name: "${friendly_name} led"
     pin: GPIO22
     chipset: SK6812
     num_leds: 1
