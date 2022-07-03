@@ -41,7 +41,7 @@ media_player:
     mode: mono
     mute_pin: 
       number: GPIO12
-      inverted: true
+      inverted: false
 
 binary_sensor:
   - platform: gpio
